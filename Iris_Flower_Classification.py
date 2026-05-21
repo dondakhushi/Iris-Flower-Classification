@@ -51,3 +51,11 @@ model = KNeighborsClassifier(n_neighbors=3)
 
 # Train model
 model.fit(X_train, y_train)
+
+# Predict test data
+y_pred = model.predict(X_test)
+
+# Accuracy
+accuracy = accuracy_score(y_test, y_pred)
+
+print("\nAccuracy:", accuracy)
