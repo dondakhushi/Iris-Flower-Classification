@@ -48,3 +48,6 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 # Create KNN model
 model = KNeighborsClassifier(n_neighbors=3)
+
+# Train model
+model.fit(X_train, y_train)
